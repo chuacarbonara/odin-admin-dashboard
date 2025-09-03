@@ -10,7 +10,7 @@ body, html {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 .sidebar {
@@ -49,6 +49,68 @@ body, html {
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    padding: 12px 48px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    box-shadow: 0 6px 3px -3px gray;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 12fr 3fr;
+}
+
+.search-right,
+.user-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 10fr 5fr;
+}
+
+.user-greeted {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.searchbar {
+    width: 900px;
+    height: 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(218, 218, 218);
+}
+
+.notif-bell,
+.user-icon,
+.username,
+.greetings,
+.new,
+.upload,
+.share {
+    align-self: center;
+}
+
+.new,
+.upload,
+.share {
+    width: 120px;
+    height: 34px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 121, 177);
+    color: white;
+    border-radius: 20px;
+    padding-top: 8px;  
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .main-content {
