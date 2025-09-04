@@ -10,7 +10,7 @@ body, html {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
@@ -68,6 +68,7 @@ body, html {
 }
 
 .user {
+    margin-top: -6px;
     display: grid;
     grid-template-columns: 1fr 10fr 5fr;
 }
@@ -124,7 +125,7 @@ body, html {
     padding: 20px 34px 36px 24px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 36px 4fr 5fr;
+    grid-template-rows: 36px 1fr 1fr;
     gap: 20px;
 }
 
@@ -186,6 +187,27 @@ body, html {
 
 .trending {
     grid-area: 3 / 2 / 4 / 3;
+}
+
+.trend-box {
+    background-color: white;
+    box-shadow: 0 6px 3px -3px gray;
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trend-username {
+    font-size: 14px;
+    color: rgb(15, 15, 15);
+    margin-bottom: -11px;
+}
+
+.trend-app {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
 }
 
 
