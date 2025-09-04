@@ -52,7 +52,7 @@ body, html {
     padding: 12px 48px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    position: relative;
+    position: sticky;
     box-shadow: 0 6px 3px -3px gray;
 }
 
@@ -83,6 +83,11 @@ body, html {
     border: none;
     border-radius: 20px;
     background-color: rgb(218, 218, 218);
+}
+
+.searchbar:focus {
+    border: 2px solid rgb(204, 0, 68);
+    outline: none;
 }
 
 .notif-bell,
@@ -116,6 +121,48 @@ body, html {
 .main-content {
     grid-area: 2 / 2 / 3 / 3;
     background-color: rgb(218, 218, 218);
+    padding: 20px 20px 36px 24px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 36px 4fr 5fr;
+    gap: 20px;
+}
+
+.h3-lite {
+    font-size: medium;
+}
+
+.projects {
+    grid-area: 2 / 1 / 4 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.projects > div {
+    position: relative;
+    background-color: white;
+    border-left: 9px solid #79FFC7 ;
+    border-radius: 10px;
+    padding: 24px 18px;
+}
+
+p {
+    color: rgb(65, 65, 65);
+}
+
+.card-icons {
+    width: 160px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending {
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 
